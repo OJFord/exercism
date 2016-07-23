@@ -1,8 +1,8 @@
 class Clock:
 
     def __init__(self, hour: int, minute: int):
-        self._hour = hour
-        self._minute = minute
+        self._hour = int(hour)
+        self._minute = int(minute)
         self._normalise()
 
     def __eq__(self, other) -> bool:
